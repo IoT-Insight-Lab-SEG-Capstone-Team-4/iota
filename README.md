@@ -1,5 +1,3 @@
-# SEG4910-4911-capstone
-
 # IoT Security and Analytics Platform
 
 ## 📖 Project Overview
