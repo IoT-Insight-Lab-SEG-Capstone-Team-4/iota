@@ -10,13 +10,23 @@ The generated dataset will include:
 A **Kibana-style dashboard** will be developed to visualize the data. Depending on progress, the project will also explore **ML/AI models** for anomaly detection and predictive analytics.
 
 ---
-
 ## 👥 Team Members and Roles
-- **Adam (Team Lead & Backend Engineer):** Coordination, backend services, data pipeline design, IoT lab integration.  
-- **Member 2 (IoT Specialist):** IoT device setup, firmware research, sensor/actuator configuration.  
-- **Member 3 (Data Engineer):** Dataset curation, log collection, preprocessing for analytics.  
-- **Member 4 (Dashboard Developer):** Kibana-style dashboard implementation and visualization.  
-- **Member 5 (ML/AI Engineer – optional):** Anomaly detection and predictive analytics (if scope allows).  
+All team members are actively involved in coding and implementation. Responsibilities are distributed as follows to ensure coverage of all project components:
+
+- **Team Lead / Backend & Integration Developer**  
+  Coordinates the project, manages repository and documentation, and develops backend services for data collection and integration with IoT devices.  
+
+- **IoT Environment Developer**  
+  Sets up physical/simulated IoT devices, configures sensors/firmware, and ensures proper device-to-network communication.  
+
+- **Data & Logging Developer**  
+  Implements log collection pipelines (sensor data, network activity, IDS logs), and prepares datasets for analysis.  
+
+- **Visualization Developer**  
+  Builds the Kibana-style dashboard for real-time visualization of IoT activity and security alerts.  
+
+- **ML/AI Developer (Stretch Goal)**  
+  Implements machine learning models for anomaly detection and predictive analytics if scope allows.  
 
 ---
 
