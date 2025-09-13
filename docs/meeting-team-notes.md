@@ -12,4 +12,4 @@ This file contains all the meeting notes taken during our weekly meetings at **5
   - We will use **IoT Insight Tracker** on GitHub as our project management tool.  
   - Karen will create a `docs` (wiki) folder on GitHub to contain all our notes and documents.  
 - Agreed to request a **laptop requisition** from the client in the next meeting, which will act as our server.  
-- Decided to name our project **ioTa**.
+- Decided to name our project **iota**.
