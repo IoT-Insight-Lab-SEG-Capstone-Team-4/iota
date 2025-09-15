@@ -51,7 +51,7 @@ All team members are actively involved in coding and implementation. Responsibil
 ---
 
 ## 🏗️ Anticipated Architecture
-![Architecture Diagram](docs/architecture.md)
+[📷 View Architecture Diagram](docs/architecture.md)
 
 IoT Devices (Physical + Simulated)
 │
