@@ -112,7 +112,7 @@ Types of attacks being simulated:
 
 ## BOM (Bill of Materials)
 
-### Perfect scenenario
+### Perfect scenario
 
 1. Raspberry Pi (IoT Server)
 1. 3 computers
@@ -146,9 +146,10 @@ Types of attacks being simulated:
 
 #### Ethernet devices
 
-1. [Hue Bridge](https://www.philips-hue.com/en-ca/p/hue-bridge/046677458478#overview) - Used to controal other IoT devices e.g Smart lamps, cameras
+1. [Hue Bridge](https://www.philips-hue.com/en-ca/p/hue-bridge/046677458478#overview) - Used to control other IoT devices e.g Smart lamps, cameras
 
 ### WiFi devices
 
 1. [EFR32xG24 Pro Kit](https://www.silabs.com/development-tools/wireless/efr32xg24-pro-kit-10-dbm?tab=overview)
 1. Routers (Virtual)
+
