@@ -1,7 +1,7 @@
 # 📒 Meeting Team Notes
 
 ## Description
-This file contains all the meeting notes taken during our weekly meetings at **5:30 p.m. every Friday**.
+This file contains all the meeting notes taken during our team meetings.**.
 
 ---
 
