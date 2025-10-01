@@ -152,4 +152,3 @@ Types of attacks being simulated:
 
 1. [EFR32xG24 Pro Kit](https://www.silabs.com/development-tools/wireless/efr32xg24-pro-kit-10-dbm?tab=overview)
 1. Routers (Virtual)
-
