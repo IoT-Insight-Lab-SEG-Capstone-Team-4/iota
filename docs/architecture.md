@@ -1,9 +1,15 @@
+### Detailed diagram
+
+![alt text](arch.png)
+
+### Simplified model
+
 ```mermaid
 flowchart TB
     ATTACKER["Attacker"]
 
     subgraph EDGE["Edge Devices"]
-        subgraph SERIAL["Serial Node (Raspberry Pi)"]
+        subgraph SERIAL["Serial Devices"]
         SERIAL_S1((Sensor)) -- "serial" --> SERIAL_NODE[IoT Server]
         SERIAL_S2((Sensor)) -- "bluetooth" --> SERIAL_NODE
         end
@@ -13,7 +19,7 @@ flowchart TB
         EDGE_S2((IoT Device)) --"Wi-Fi"--> EDGE_NODE
         end
 
-        subgraph VMM["VMM (Hypervisor)"]
+        subgraph VMM["Virtual Devices"]
         VMM_S1((Virtual Router)) --> VMM_NODE[Virtual Router / IoT]
         VMM_S2((Virtual IoT Device)) --> VMM_NODE
         end
