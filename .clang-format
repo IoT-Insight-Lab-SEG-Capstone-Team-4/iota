@@ -1,0 +1,27 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+ColumnLimit: 120
+BreakBeforeBraces: Attach
+SpaceBeforeParens: ControlStatements
+PointerAlignment: Left
+BinPackParameters: false
+BinPackArguments: false
+AllowShortFunctionsOnASingleLine: None
+ReflowComments: true
+SortIncludes: CaseSensitive
+IncludeCategories:
+    - Regex: '^<.*\.h>'
+      Priority: 1
+    - Regex: '^".*\.h"'
+      Priority: 2
+SpaceAfterCStyleCast: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceBeforeAssignmentOperators: true
+AlignAfterOpenBracket: Align
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+DerivePointerAlignment: false
