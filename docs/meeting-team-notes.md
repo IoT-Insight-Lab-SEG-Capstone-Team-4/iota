@@ -24,26 +24,27 @@ This file contains all the meeting notes taken during our team meetings.\*\*.
 -   Since the client is not available tomorrow, we will send an email with a link to the architecture.md file and ask for feedback.
 -   We can potentially work in parallel on different parts of the project (frontend using dummy data, backend using mock APIs & setting up the IoT devices) once the architecture is validated.
 
+
 ### 3rd October 2025
 
--   Updated the architecture plan as requested by the client in the previous meeting.
--   Added details to the diagram, including:
-    -   **Communication protocols**
-    -   **Required devices**
-    -   A **color key** for each device category (Sensor, Router, ESP32, nRF52840, EFR32xG24)
--   We concluded that we currently lack the required devices for some protocols:
-    -   **LoRaWAN, Z-Wave, Zigbee** (critical)
-    -   **Thread** which is missing one IoT device nRF52840 (less urgent)
--   We will ask the client to provide the missing devices.
--   We divided the tasks between us according to the architecture. This is the list of responsibilities:
-    <div align="center">
+- Updated the architecture plan as requested by the client in the previous meeting.  
+- Added details to the diagram, including:
+  - **Communication protocols**
+  - **Required devices**
+  - A **color key** for each device category (Sensor, Router, ESP32, nRF52840, EFR32xG24)  
+- We concluded that we currently lack the required devices for some protocols:
+  - **LoRaWAN, Z-Wave, Zigbee** (critical)  
+  - **Thread** which is missing one IoT device nRF52840 (less urgent)  
+- We will ask the client to provide the missing devices.  
+- We divided the tasks between us according to the architecture. This is the list of responsibilities:
+<div align="center">
 
-| Team Member | Responsibility           |
-| ----------- | ------------------------ |
-| **Adam**    | MQTT protocol            |
-| **Hiba**    | Thread protocol          |
-| **Karen**   | Zigbee protocol          |
-| **Patrick** | Virtual model            |
+| Team Member | Responsibility        |
+|-------------|-----------------------|
+| **Adam**    | MQTT protocol         |
+| **Hiba**    | Thread protocol       |
+| **Karen**   | Zigbee protocol       |
+| **Patrick** | Virtual model         |
 | **David**   | Backend & storage server |
-
 </div>
+  
