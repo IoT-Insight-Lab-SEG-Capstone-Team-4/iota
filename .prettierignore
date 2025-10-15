@@ -1,1 +1,3 @@
 **/.vscode
+hypervisor/firmware/
+hypervisor/router_vms/

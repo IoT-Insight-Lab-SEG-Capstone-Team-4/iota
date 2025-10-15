@@ -18,3 +18,5 @@ venv/
 .venv/
 
 node_modules/
+hypervisor/firmware/
+hypervisor/router_vms/

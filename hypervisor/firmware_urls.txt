@@ -1,0 +1,8 @@
+# Router Firmware URL List
+# Format: firmware_filename|download_url
+# Add one entry per line
+# Lines starting with # are comments and will be ignored
+
+# Example: dlink_dir600_v2.bin|https://example.com/firmware/dlink_dir600_v2.bin
+
+router1_mikrotik.img.zip|https://download.mikrotik.com/routeros/6.49.11/chr-6.49.11.img.zip
