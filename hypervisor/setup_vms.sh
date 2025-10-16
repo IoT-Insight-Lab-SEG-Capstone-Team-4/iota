@@ -44,10 +44,10 @@ check_requirements() {
     log_info "Checking system requirements..."
     
     # Check for required tools
-    local required_tools=("virsh" "virt-install" "wget" "qemu-img" "unzip")
+    local required_tools=("virsh" "virt-install" "wget" "qemu-img" "unzip" "gunzip")
     for tool in "${required_tools[@]}"; do
         if ! command -v "$tool" &> /dev/null; then
-            log_error "$tool is not installed. Please install libvirt, virt-manager, qemu, and unzip."
+            log_error "$tool is not installed. Please install libvirt, virt-manager, qemu, unzip, and gzip."
             exit 1
         fi
     done
@@ -114,8 +114,13 @@ download_firmware() {
 extract_firmware() {
     local firmware_file="$1"
     local firmware_path="$FIRMWARE_DIR/$firmware_file"
-    local base_name="${firmware_file%.zip}"
+    local base_name="$firmware_file"
+    
+    # Strip extensions to get base name
+    base_name="${base_name%.zip}"
+    base_name="${base_name%.gz}"
     base_name="${base_name%.img}"
+    
     local extract_dir="$FIRMWARE_DIR/$base_name"
     local target_img="$FIRMWARE_DIR/${base_name}.img"
     
@@ -124,7 +129,23 @@ extract_firmware() {
         return 1
     fi
     
-    if [[ "$firmware_file" == *.zip ]]; then
+    if [[ "$firmware_file" == *.gz ]]; then
+        if [ -f "$target_img" ]; then
+            log_info "Firmware already extracted: $base_name.img"
+            echo "$target_img"
+            return 0
+        fi
+        
+        log_info "Extracting $firmware_file..."
+        if ! gunzip -c "$firmware_path" > "$target_img"; then
+            log_warn "Failed to extract $firmware_file"
+            rm -f "$target_img"
+            return 1
+        fi
+        
+        echo "$target_img"
+        return 0
+    elif [[ "$firmware_file" == *.zip ]]; then
         if [ -f "$target_img" ]; then
             log_info "Firmware already extracted: $base_name.img"
             echo "$target_img"
@@ -155,7 +176,7 @@ extract_firmware() {
         echo "$firmware_path"
         return 0
     else
-        log_warn "Unsupported firmware format: $firmware_file (only .zip and .img supported)"
+        log_warn "Unsupported firmware format: $firmware_file (only .zip, .img, and .gz supported)"
         return 1
     fi
 }
