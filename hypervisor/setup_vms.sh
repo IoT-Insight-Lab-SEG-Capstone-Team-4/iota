@@ -137,7 +137,9 @@ extract_firmware() {
         fi
         
         log_info "Extracting $firmware_file..."
-        if ! gunzip -c "$firmware_path" > "$target_img"; then
+        gunzip -c "$firmware_path" > "$target_img" 2>/dev/null || true
+        
+        if [ ! -f "$target_img" ] || [ ! -s "$target_img" ]; then
             log_warn "Failed to extract $firmware_file"
             rm -f "$target_img"
             return 1
