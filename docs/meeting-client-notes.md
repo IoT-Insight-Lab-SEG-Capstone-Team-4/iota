@@ -80,3 +80,41 @@ This file contains all the meeting notes taken during our biweekly meetings with
     - Thread protocol
     - Z-wave
     - Optimal PCAP collection time for IoT
+
+---
+
+### 8th October 2025
+
+#### Overview
+This meeting focused on refining the architecture and device inventory.  
+The client provided feedback regarding additional details, prioritization, and vulnerability tracking.
+
+#### Client Requests & Updates
+
+1. **Device Inventory Table**
+Add the following new columns:
+- **Usage Type:**  
+  Indicate whether the item is for development or for usage.
+- **Priority / Importance:**  
+  Define how critical each item is to the current phase (e.g., *high*, *medium*, *low*).
+- **CVE / Vulnerability:**  
+  Include known vulnerabilities (based on CVE database lookups) for each device.
+
+2. **Architecture Diagram**
+- **Expand the Virtual Module:**  
+  Add more detail regarding simulated devices and their data flow.  
+- **Clarify Router/Switch Connections:**  
+  Specify whether links are LAN or WLAN.  
+- **Confirm IoT Server vs IoT Hub:**  
+  Verify which term applies and update the diagram accordingly.
+
+3. **Research Tasks**
+- Investigate Home Assistant as a possible environment for simulating IoT devices.  
+- Explore smart locks as example IoT devices for integration.  
+- Gather data from CVE databases to identify vulnerabilities in devices used.
+
+4. **Infrastructure Notes**
+- A desktop computer in the lab may be available to serve as a local IoT server (pending confirmation).  
+- Team will receive permissions to access the uOttawa router/server for experimentation (confirmation pending).
+
+
